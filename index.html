@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Recommendation</title>
+  <meta name="description" content="Discover trending, recommended, and genre-specific movies with our smart movie recommendation app.">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>🎬 Movie Recommendation</h1>
+    <div class="theme-toggle">
+      <button id="theme-button" type="button" title="Toggle Light/Dark Theme">☀️</button>
+    </div>
+    <div id="auth-container">
+      <button onclick="showLoginForm()" class="auth-button">Login</button>
+      <button onclick="showSignupForm()" class="auth-button">Signup</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Login Form -->
+    <div id="login-modal" class="auth-modal">
+      <h2>Login</h2>
+      <input type="text" id="login-email" placeholder="Email"/>
+      <input type="password" id="login-password" placeholder="Password"/>
+      <button onclick="login()">Login</button>
+      <button onclick="closeAuthForm()">Close</button>
+    </div>
+
+    <!-- Signup Form -->
+    <div id="signup-modal" class="auth-modal">
+      <h2>Signup</h2>
+      <input type="text" id="signup-email" placeholder="Email"/>
+      <input type="password" id="signup-password" placeholder="Password"/>
+      <button onclick="signup()">Signup</button>
+      <button onclick="closeAuthForm()">Close</button>
+    </div>
+
+    <!-- Search -->
+    <section id="search-section" aria-label="Search Movies">
+      <input type="text" id="search-bar" placeholder="Search for movies..." aria-label="Search bar"/>
+      <button id="search-button" type="button" aria-label="Search">🔍</button>
+    </section>
+
+    <!-- Search Results -->
+    <section id="search-results" class="movie-sections genre-section" aria-label="Search Results" style="display:none;">
+      <h2>🔎 Search Results</h2>
+      <div class="movie-list" id="search-results-list">
+        <p class="empty-message">No results yet.</p>
+      </div>
+    </section>
+
+    <!-- Genres -->
+    <section id="genres" class="movie-sections" aria-label="Browse by Genre">
+      <h2>🎭 Genres</h2>
+      <!-- Genre sections dynamically added -->
+    </section>
+
+    <!-- Trending -->
+    <section id="trending-movies" class="movie-sections genre-section" aria-label="Trending Movies">
+      <h2>🔥 Trending Movies</h2>
+      <div class="slider-container">
+        <button class="scroll-left" type="button" onclick="scrollLeft('trending-list')">◀</button>
+        <div class="movie-list" id="trending-list"><p class="empty-message">Loading...</p></div>
+        <button class="scroll-right" type="button" onclick="scrollRight('trending-list')">▶</button>
+      </div>
+    </section>
+
+    <!-- Recommended -->
+    <section id="recommended-movies" class="movie-sections genre-section" aria-label="Recommended Movies">
+      <h2>🎯 Recommended for You</h2>
+      <div class="slider-container">
+        <button class="scroll-left" type="button" onclick="scrollLeft('recommended-list')">◀</button>
+        <div class="movie-list" id="recommended-list"><p class="empty-message">Loading...</p></div>
+        <button class="scroll-right" type="button" onclick="scrollRight('recommended-list')">▶</button>
+      </div>
+    </section>
+
+    <!-- Watchlist (agar chaho to is par bhi same class laga sakte ho) -->
+    <section id="watchlist" class="movie-sections" aria-label="Your Watchlist">
+      <h2>📌 Your Watchlist</h2>
+      <div class="slider-container">
+        <button class="scroll-left" type="button" onclick="scrollLeft('watchlist-list')">◀</button>
+        <div class="movie-list" id="watchlist-list"><p class="empty-message">Loading...</p></div>
+        <button class="scroll-right" type="button" onclick="scrollRight('watchlist-list')">▶</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Movie Recommendation. All rights reserved.</p>
+  </footer>
+
+  <script defer src="script.js"></script>
+</body>
+</html>
