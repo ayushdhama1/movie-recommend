@@ -15,17 +15,32 @@ A responsive **Movie Recommendation Website** built with **HTML, CSS, and JavaSc
 
 ---
 
-## 🖼️ Screenshots  
-(Add your screenshots in the repo and they will appear here automatically)  
-![App Screenshot](screenshot.png)  
+## 📸 Screenshots
+
+### 🏠 Home Page
+![App Screenshot](screenshots/screenshot1.png)
+
+### 🎥 Movie Details Page
+![App Screenshot](screenshots/screenshot2.png)
+
+### ⭐ Watchlist Page
+![App Screenshot](screenshots/screenshot3.png)
+
+### 🌙 Dark Mode
+![App Screenshot](screenshots/screenshot4.png)
 
 ---
 
 ## 🛠️ Tech Stack  
+
 ![HTML5](https://img.shields.io/badge/HTML5-orange?logo=html5&logoColor=white)
+
 ![CSS3](https://img.shields.io/badge/CSS3-blue?logo=css3&logoColor=white)
+
 ![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript&logoColor=black)
+
 ![Netlify](https://img.shields.io/badge/Netlify-black?logo=netlify&logoColor=00C7B7)
+
 ![TMDB API](https://img.shields.io/badge/TMDB%20API-green)
 
 ---
