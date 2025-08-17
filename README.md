@@ -18,16 +18,16 @@ A responsive **Movie Recommendation Website** built with **HTML, CSS, and JavaSc
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![App Screenshot](sc%20image/screenshot1.png)
+![App Screenshot](screenshots/screenshot1.png)
 
 ### 🎥 Movie Details Page
-![App Screenshot](sc%20image/screenshot2.png)
+![App Screenshot](screenshots/screenshot2.png)
 
 ### ⭐ Watchlist Page
-![App Screenshot](sc%20image/screenshot3.png)
+![App Screenshot](screenshots/screenshot3.png)
 
 ### 🌙 Dark Mode
-![App Screenshot](sc%20image/screenshot4.png)
+![App Screenshot](screenshots/screenshot4.png)
 
 ---
 
