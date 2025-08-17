@@ -24,7 +24,7 @@ A responsive **Movie Recommendation Website** built with **HTML, CSS, and JavaSc
 ![App Screenshot](screenshots/screenshot2.png)
 
 ### ⭐ Watchlist Page
-![App Screenshot](screenshots/screenshot3.png)
+![App Screenshot](screenshots/screeshot3.png)
 
 ### 🌙 Light Mode
 ![App Screenshot](screenshots/screenshot4.png)
